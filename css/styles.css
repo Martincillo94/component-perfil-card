@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  min-height: 100vh;
+  display: grid;
+  background-color: hsl(185deg, 75%, 39%);
+  place-items: center;
+  text-align: center;
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right 45vw bottom 40vh, left 45vw top 45vh;
+}
+body .card {
+  width: 329px;
+  height: 377px;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+body .card .section-one {
+  background-image: url(../images/bg-pattern-card.svg);
+  height: 144px;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+body .card .section-one img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 5px solid #fff;
+  transform: translateY(90%);
+  -webkit-transform: translateY(90%);
+  -moz-transform: translateY(90%);
+  -ms-transform: translateY(90%);
+  -o-transform: translateY(90%);
+}
+body .card .section-two {
+  min-height: 233px;
+  background-color: #fff;
+}
+body .card .section-two .name {
+  color: hsl(229deg, 23%, 23%);
+  padding-top: 4.6rem;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+body .card .section-two .name span {
+  color: hsl(0deg, 0%, 59%);
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+body .card .section-two .city {
+  color: hsl(227deg, 10%, 46%);
+  font-size: 0.8em;
+  margin-top: 0.4rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgb(206, 204, 204);
+}
+body .card .section-two .details {
+  min-height: 88px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .card .section-two .details .name-detail {
+  font-size: 0.6rem;
+  letter-spacing: 1.5px;
+  color: hsl(0deg, 0%, 59%);
+}
+body .card .section-two .details .amount {
+  color: hsl(229deg, 23%, 23%);
+  font-weight: 700;
+}
+body .card .section-two .details .follow,
+body .card .section-two .details .like,
+body .card .section-two .details .photos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    min-width: 350px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

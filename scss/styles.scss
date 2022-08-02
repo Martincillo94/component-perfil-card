@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+$background: hsl(185, 75%, 39%);
+$text: hsl(229, 23%, 23%);
+$text-middle: hsl(227, 10%, 46%);
+$text-light: hsl(0, 0%, 59%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  min-height: 100vh;
+  display: grid;
+  background-color: $background;
+  place-items: center;
+  text-align: center;
+  background-image: url(../images/bg-pattern-top.svg),url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right 45vw bottom 40vh, left 45vw top 45vh;
+
+  .card {
+    width: 329px;
+    height: 377px;
+    border-radius: 0.8rem;
+    overflow: hidden;
+
+    .section-one {
+      background-image: url(../images/bg-pattern-card.svg);
+      height: 144px;
+      display: flex;
+      justify-items: center;
+      justify-content: center;
+      img {
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border: 5px solid #fff;
+        transform: translateY(90%);
+        -webkit-transform: translateY(90%);
+        -moz-transform: translateY(90%);
+        -ms-transform: translateY(90%);
+        -o-transform: translateY(90%);
+      }
+    }
+    .section-two {
+      min-height: 233px;
+      background-color: #fff;
+      .name {
+        color: $text;
+        padding-top: 4.6rem;
+        font-weight: 700;
+        margin-right: 0.5rem;
+        span {
+          color: $text-light;
+          font-weight: 400;
+          margin-left: 0.5rem;
+        }
+      }
+      .city {
+        color: $text-middle;
+        font-size: 0.8em;
+        margin-top: 0.4rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid rgb(206, 204, 204);
+      }
+      .details {
+        min-height: 88px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .name-detail {
+          font-size: 0.6rem;
+          letter-spacing: 1.5px;
+          color: $text-light;
+        }
+        .amount {
+          color: $text;
+          font-weight: 700;
+        }
+        .follow,
+        .like,
+        .photos {
+          display: flex;
+          flex-direction: column;
+          gap: 0.3rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:1440px){
+  .card{
+    min-width: 350px;
+  }
+}
